@@ -6,12 +6,7 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  # - job_name: 'example_api'
-  #   scheme: http
-  #   static_configs:
-  #     - targets: ['example_api:9091']
-
-- job_name: 'zander-ingestion'
+ - job_name: 'zander-ingestion'
     scheme: http
     static_configs:
       - targets: ['jubilant-warmth.railway.internal:8080']
